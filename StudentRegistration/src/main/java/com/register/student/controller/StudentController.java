@@ -26,6 +26,7 @@ public class StudentController {
 	@Autowired
 	ObjectMapper mapper;
 	
+	//method to register the student.
 	@PostMapping(value=MappingConstants.save)
 	public Student registerStudent(@RequestParam("file") MultipartFile file,
 			@RequestParam("studentDetails") String studentDetails) throws IOException {
